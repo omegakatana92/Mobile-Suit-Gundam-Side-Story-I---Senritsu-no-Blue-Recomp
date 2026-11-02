@@ -93,9 +93,7 @@ the remaining graphics and slave-CPU issues.
 
 ## License
 
-The original game-project files (Makefile, `games/`, docs, tools, assets, input movies) are
-**PolyForm Noncommercial 1.0.0**. The synchronized toolkit in `satrecomp/` is
-**GPL-3.0-only** and is not relicensed here. The binaries contain that toolkit, so the
-combined binaries are distributed under GPL-3.0; see `LICENSING.md` for the exact split.
-The game, its disc image, its graphics, music and samples are the property of their owners
-and are not part of this repository or its packages.
+The port and the synchronized toolkit are distributed under **GPL-3.0-only**. See
+`LICENSE`, `THIRD_PARTY_NOTICES.md` and `LICENSES/`. The game, its disc image, its graphics,
+music and samples are the property of their owners and are not part of this repository or
+its packages.

@@ -51,7 +51,7 @@ for exe in "$APPDIR/usr/bin/$GAME" "$APPDIR/usr/bin/$GAME-launcher"; do
     patchelf --set-rpath '$ORIGIN/../lib' "$exe"
 done
 
-cp LICENSE LICENSING.md THIRD_PARTY_NOTICES.md "$APPDIR/usr/share/licenses/mobile-suit-gundam-side-story-i-1/"
+cp LICENSE THIRD_PARTY_NOTICES.md "$APPDIR/usr/share/licenses/mobile-suit-gundam-side-story-i-1/"
 cp LICENSES/* "$APPDIR/usr/share/licenses/mobile-suit-gundam-side-story-i-1/"
 cp satrecomp/LICENSE "$APPDIR/usr/share/licenses/mobile-suit-gundam-side-story-i-1/satrecomp-LICENSE"
 

@@ -25,7 +25,7 @@ for dll in SDL3.dll zlib1.dll libgcc_s_seh-1.dll libstdc++-6.dll libwinpthread-1
     fi
 done
 
-cp LICENSE LICENSING.md THIRD_PARTY_NOTICES.md README.md "$OUT/"
+cp LICENSE THIRD_PARTY_NOTICES.md README.md "$OUT/"
 cp docs/STATUS.md docs/TESTING.md docs/BUILDING.md "$OUT/"
 cp LICENSES/* "$OUT/LICENSES/"
 
@@ -59,7 +59,7 @@ On a gamepad, the lower face buttons are A/B/C and Start is Start. The launcher'
 Controllers page changes them.
 
 This package contains no game data, no BIOS and no saves. See LICENSE,
-LICENSING.md, THIRD_PARTY_NOTICES.md and LICENSES\.
+THIRD_PARTY_NOTICES.md and LICENSES\.
 EOF
 
 printf '%s\n' "package: $OUT"

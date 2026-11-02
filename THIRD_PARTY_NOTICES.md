@@ -1,11 +1,7 @@
 # Third-party notices
 
-The original game-project files are distributed under the **PolyForm Noncommercial License
-1.0.0** (`LICENSE`). The synchronized toolkit in `satrecomp/` is **GPL-3.0-only** and is not
-relicensed; the combined binaries contain it and are therefore distributed under GPL-3.0.
-See `LICENSING.md` for the exact split. The components below are compatible with the
-GPL-3.0 toolkit; the PolyForm terms apply only to the original project code where it can be
-separated from the GPL-covered toolkit.
+This project is distributed under the **GNU General Public License v3.0 only**
+(`LICENSE`, `LICENSES/GPL-3.0-only.txt`). The components below are compatible with it.
 
 The repository originally carried a GPL-2.0 text; it is kept as
 `LICENSES/GPL-2.0.txt` for provenance.

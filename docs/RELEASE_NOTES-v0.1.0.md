@@ -11,8 +11,8 @@ your `.cue` and its `.bin` tracks in place.
 
 | File | Size | SHA-256 |
 | --- | --- | --- |
-| `Mobile-Suit-Gundam-Side-Story-I-Windows-x64.zip` | 12,183,353 | `8D6983F20E782D6040169C0E17EF9FD61AA9334BE8D7903CF3BE72E2A29C69E8` |
-| `Mobile-Suit-Gundam-Side-Story-I-v0.1.0-SteamDeck-x86_64.AppImage` | 10,867,904 | `DBC1E2B4802FC4ED145ED51C9154E56D8665182AC4862226E15FAC0A94F490B2` |
+| `Mobile-Suit-Gundam-Side-Story-I-Windows-x64.zip` | 12,190,369 | `45B6C77C3189AFE02E9387010D93015028069C5CFA40D8778574C61B7E88F968` |
+| `Mobile-Suit-Gundam-Side-Story-I-v0.1.0-SteamDeck-x86_64.AppImage` | 10,863,808 | `60CDF1DACE15DFE3A4B68990ABD2E2C934DF44F4D5773A975F3188B937B317DD` |
 
 The Windows ZIP is a portable folder: `gundam1.exe`, `gundam1-launcher.exe`, SDL3, zlib and
 the MinGW runtime DLLs, licenses and docs. The AppImage is a Linux x86_64 candidate for
@@ -65,11 +65,10 @@ Side Story I - Senritsu no Blue\` on Windows; the XDG data folder on Linux). Set
 
 ## Source and licensing
 
-The source is in this repository. The original project files are **PolyForm Noncommercial
-1.0.0** (`LICENSE`, `LICENSING.md`). The synchronized `satrecomp/` toolkit is
-**GPL-3.0-only** and is not relicensed; because the binaries contain it, the combined
-binaries are distributed under GPL-3.0. The corresponding source is this repository,
-including `satrecomp/`. Third-party notices are in `THIRD_PARTY_NOTICES.md` and `LICENSES/`.
+The source is in this repository and is distributed under **GPL-3.0-only** (`LICENSE`).
+The synchronized `satrecomp/` toolkit is also GPL-3.0-only. The corresponding source is
+this repository, including `satrecomp/`. Third-party notices are in
+`THIRD_PARTY_NOTICES.md` and `LICENSES/`.
 
 The source tree contains the CMake build definitions required to build. No CMake cache,
 build directory, generated translation, disc image, BIOS, save or game data is included.
