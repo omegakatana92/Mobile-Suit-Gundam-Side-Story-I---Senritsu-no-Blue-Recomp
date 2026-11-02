@@ -103,8 +103,9 @@ Two separate paths were checked, as asked:
    (best normalized correlation 0.39 at the expected offset; the SCSP mix is on top, so this
    is not a clean channel). The OPTION screen and its sound test play track 2
    (`PlaySectors FAD 53072..60743`, repeated), and the captured audio is non-silent across
-   those screens. This is the game's background music; it is not silent. Before the fix
-   below the game did not get past the intro at all.
+   those screens. That is CD-DA background music, and it is not silent. A stage BGM
+   transition during a full mission has not been captured yet; that is a gameplay test.
+   Before the fix below the game did not get past the intro at all.
 
 The earlier Hyper Duel fix in this toolkit (raw CD-DA sectors on the 44.1 kHz clock) is
 present in the synchronized copy and was reused; the Gundam disc's CUE is multi-file with a
