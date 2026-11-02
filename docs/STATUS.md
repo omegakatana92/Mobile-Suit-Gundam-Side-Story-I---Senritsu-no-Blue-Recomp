@@ -58,14 +58,32 @@ Updated: 2026-11-01 (local build)
 | Linux coverage | 15,000-frame action run | 100.00% recompiled, 0 interpreted |
 | AppImage | `tools/package_appimage.sh` | 10,863,808 bytes; max ELF symbol `GLIBC_2.34`; extracted port runs 300 frames 100%; AppRun launcher screenshot and `--play` under Xvfb |
 
+## Performance
+
+Measured with the headless software renderer (`--headless`, no window, picture read back
+only for hashes/screenshots), 15,000 frames of `games/gundam1/movies/action.txt`:
+
+| Host | Wall time | Frames/s | ms/frame |
+| --- | --- | --- | --- |
+| Windows 11 x64, MSYS2 GCC 16.2 build | 2m38.1s | 94.9 | 10.5 |
+| Ubuntu 22.04 WSL2, GCC 11.4 build | 2m40.0s | 93.7 | 10.7 |
+
+The 600-frame boot takes about 4.8 s on the same Windows host. These are not real-time
+pacing figures: the windowed frontend presents at the Saturn's timing with SDL. The GPU
+renderer's cost and the audio device's latency/underruns were not measured on hardware.
+
 ## Packages
 
-| Package | SHA-256 |
-| --- | --- |
-| `dist/Mobile-Suit-Gundam-Side-Story-I-Windows-x64.zip` (12,190,092 bytes) | `DA4DA99E138F940F0CBBDA9A9674305582DB9C83411472A733BC501CF8C8013A` |
-| `dist/Mobile-Suit-Gundam-Side-Story-I-v0.1.0-SteamDeck-x86_64.AppImage` (10,863,808 bytes) | `0622336E0FF1A3B5FAFD03F544B9E76170FAD6738A581976358D3BD569860B44` |
+Local build artifacts (git-ignored; the folder and zip are side by side):
 
-The AppImage bundles SDL3, zlib, libstdc++ and libgcc_s; the host's glibc (2.35+), Mesa and
+- `dist/Mobile-Suit-Gundam-Side-Story-I-Windows-x64/` — portable Windows x64 folder
+  (`gundam1.exe`, `gundam1-launcher.exe`, SDL3/zlib/MinGW runtime DLLs, licenses, docs).
+- `dist/Mobile-Suit-Gundam-Side-Story-I-Windows-x64.zip` — the same tree.
+- `dist/Mobile-Suit-Gundam-Side-Story-I-v0.1.0-SteamDeck-x86_64.AppImage` — Linux x86_64
+  AppImage.
+
+Their SHA-256 sums are in `dist/SHA256SUMS.txt` beside them (not committed). The AppImage
+bundles SDL3, zlib, libstdc++ and libgcc_s; the host's glibc (2.35+), Mesa and
 X11/Wayland/audio libraries are used. It was tested by extracting it and by running its
 launcher under Xvfb in WSL; **it has not been run on Steam Deck hardware**, so it is a
 Steam Deck candidate, not "verified".
