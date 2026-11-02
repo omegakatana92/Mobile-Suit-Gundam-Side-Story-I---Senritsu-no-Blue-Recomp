@@ -62,7 +62,7 @@ Updated: 2026-11-01 (local build)
 
 | Package | SHA-256 |
 | --- | --- |
-| `dist/Mobile-Suit-Gundam-Side-Story-I-Windows-x64.zip` (12,189,452 bytes) | `41D32A73626E035DB1A40C778239B0B249C66146990FF4ACD58B7FFB8B9697E2` |
+| `dist/Mobile-Suit-Gundam-Side-Story-I-Windows-x64.zip` (12,190,092 bytes) | `DA4DA99E138F940F0CBBDA9A9674305582DB9C83411472A733BC501CF8C8013A` |
 | `dist/Mobile-Suit-Gundam-Side-Story-I-v0.1.0-SteamDeck-x86_64.AppImage` (10,863,808 bytes) | `0622336E0FF1A3B5FAFD03F544B9E76170FAD6738A581976358D3BD569860B44` |
 
 The AppImage bundles SDL3, zlib, libstdc++ and libgcc_s; the host's glibc (2.35+), Mesa and
