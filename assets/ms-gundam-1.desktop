@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Mobile Suit Gundam Side Story I
+Comment=Native Sega Saturn recompilation
+Exec=gundam1-launcher
+Icon=ms-gundam-1
+Terminal=false
+Categories=Game;ActionGame;
+StartupWMClass=gundam1-launcher
