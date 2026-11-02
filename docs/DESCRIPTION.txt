@@ -1,0 +1,1 @@
+Native Windows/Linux recompilation of Mobile Suit Gundam Side Story I: Senritsu no Blue (Sega Saturn). Runs the original SH-2 code natively, with no emulator; requires your own disc image. No ROMs, BIOS, or game data are included. Project code: PolyForm Noncommercial 1.0.0. Synchronized satrecomp toolkit: GPL-3.0-only. Keyboard/gamepad support.
